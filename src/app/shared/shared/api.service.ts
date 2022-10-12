@@ -15,7 +15,7 @@ export class ApiService {
   //1.Create -- the data ==> Create--POST
   postEmployee(data:any){
     this.http.post<any>("http://localhost:3000/posts",data)
-    .pipe(map((res)=>{
+    .pipe(map((res:any)=>{
       return res
     }))
   }
@@ -23,7 +23,7 @@ export class ApiService {
   //2.Read the Data ==>Read  --   GET
    getEmployee(){
     this.http.get<any>("http://localhost:3000/posts")
-    .pipe(map((res)=>{
+    .pipe(map((res:any)=>{
       return res
     }))
    }
@@ -31,7 +31,7 @@ export class ApiService {
    //3.Update the data ==>  Update -- PUT or PATCH
    updateEmployee(data:any, id:number ){
     this.http.put<any>("http://localhost:3000/posts"+id,data)
-    .pipe(map((res)=>{
+    .pipe(map((res:any)=>{
        return res
     }))
    }
