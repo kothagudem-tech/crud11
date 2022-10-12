@@ -12,7 +12,7 @@ export class ApiService {
 
  	        
    
-  //1.Create -- the data ==> Create--POST
+  
   postEmployee(data:any){
     this.http.post<any>("http://localhost:3000/posts",data)
     .pipe(map((res:any)=>{
