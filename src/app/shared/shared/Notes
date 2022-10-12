@@ -1,0 +1,14 @@
+
+
+Each letter in the CRUD acronym has a corresponding HTTP request method.
+
+
+
+
+
+CRUD OPERATION  	HTTP REQUEST METHOD
+=============       ===================
+Create	        --    POST
+Read	        --    GET
+Update	        --    PUT or PATCH
+Delete	        --    DELETE
